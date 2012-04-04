@@ -1,5 +1,4 @@
-#@Phoenix
-#Last modified: 31/10/10
+#alam
 #Wikipedia Crawler
 
 import urllib

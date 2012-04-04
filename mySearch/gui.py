@@ -283,10 +283,7 @@ def search(event):
 
     
 
-'''    
-def sel():
-    print(context.get())
-'''
+
 
 root = Tk()
 root.title("MySearch")
@@ -315,11 +312,7 @@ panel1.pack(side='top', fill=X, expand='no')
 
 #textFrame = Frame(panel1)
 
-'''
-entry = Label(root)
-entry["text"] = "Enter the Search Term:  "
-entry.pack(side=LEFT,pady=5)
-'''
+
 
 v = StringVar()
 
@@ -333,37 +326,6 @@ root.bind("<Escape>", exit)
 root.bind("<Return>", search)
 
 
-'''
-button1 = Button(root, text="Quit", command=root.destroy)
-button1.pack(side=RIGHT)
-
-button = Button(root, text="Search", command=search)
-button.pack(side=RIGHT)
-context = StringVar()
-'''
 
 root.mainloop()
-'''
-root1 = Tk()
-root1.title("MySearch")
-root1.overrideredirect(1);
-w1=500
-h1=200
-ws = root1.winfo_screenwidth()
-hs = root1.winfo_screenheight()
-x = (ws/2) - (w1/2) - 7
-y = (hs/2) - (h1/2) - 2
-root1.geometry('%dx%d+%d+%d' % (w1,h1,x,y))
 
-label1 = Label(root1, text = "Thank You for using MySearch.\nPlease pick your intended search context\n")
-label1.pack()
-R1 = Radiobutton(root1, text="Programming", variable=context, value="Programming")
-R1.pack(anchor = W)
-R2 = Radiobutton(root1, text="Snake", variable=context, value="Snake")
-R2.pack(anchor = W)
-button2 = Button(root1, text="Submit", command=root1.destroy)
-button2.pack(side=RIGHT)
-label2 = Label(root1, text = "    ")
-label2.pack(side=RIGHT)
-root1.mainloop()
-'''

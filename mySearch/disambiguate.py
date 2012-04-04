@@ -1,4 +1,4 @@
-#@Phoenix
+#alam
 #Word Sense Disambiguator
 
 import urllib2
